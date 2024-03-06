@@ -1,0 +1,63 @@
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+
+.heading {
+    margin: 0;
+    background-color: rgb(0, 39, 76);
+    width: 100%;
+    overflow: hidden;
+    height: auto;
+    position: relative;
+    vertical-align: middle;
+}
+
+.heading h1 {
+    margin: 0;
+    font-family: Barlow, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 2vw;
+    color: white;
+    padding: 2.2vw;
+    float: left;
+}
+
+.heading img {
+    margin: 0;
+    width: 6%; 
+    float: left;
+    position: absolute;
+    top: 0.3vw;
+    right: 0.3vw;
+    bottom: 0.3vw;
+}
+
+#navigationBar .bar ul li a {
+    font-size: 1.2vw;
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(0, 39, 76);
+    padding: 1vw;
+}
+
+#navigationBar .bar {
+    background-color: rgb(255, 203, 5);
+    overflow: hidden;
+    height: auto;
+}
+
+#navigationBar .bar ul {
+    margin: 0;
+    list-style-type: none;
+    font-family: Barlow, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 700;
+}
+
+#navigationBar .bar ul li {
+    margin: 0;
+    padding: 0.7vw;
+    float: left
+}
