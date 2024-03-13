@@ -4,50 +4,104 @@
     <link href="navigationbar.css" rel="stylesheet">
     <title>"openlabel_research"</title>
     <style>
-
         .content h2 {
-            margin:0;
+            margin: 0;
             font-size: 1.9vw;
             padding-left: 2vw;
-            padding-top: 2vw;
+            padding-top:2vw;
         }
-        p{
-            margin:0;
-            padding-top:1vw;
-            font-size:1.2vw;
-            padding-left:2vw;
-            padding-right:2vw;
+        .overview{
+            padding-top:10vw;
+        }
 
+        p {
+            text-align: justify;
+            margin: 0;
+            padding-top: 1vw;
+            font-size: 1.2vw;
+            padding-left: 2vw;
+            padding-right: 2vw;
+            line-height: 3.5vh;
+        }
+
+        .ul {
+            border: 0;
+            margin: 0;
+            padding-top: 0vw;
+            font-size: 1.2vw;
+            padding-left: 3vw;
+            padding-right: 2vw;
+            padding-bottom: 0;
+        }
+
+        .ul li {
+            padding: 0.3vw;
+        }
+
+        .overview img{
+            width: 25vw;
+            padding-top:2vw;
+            padding-left: 35vw;
         }
     </style>
 </head>
 
 <body>
-    <div class="heading">
-        <h1>OPENLABEL RESEARCH</h1>
-        <img
-            src="https://www.mlive.com/resizer/1o2FZ1rS-R2oZPwRDQfPemybSCE=/1280x0/smart/advancelocal-adapter-image-uploads.s3.amazonaws.com/image.mlive.com/home/mlive-media/width2048/img/newsnow_impact/photo/umflintlogojpg-99aa56eb215c1995.jpg">
-    </div>
+    <div class="H_N">
+        <div class="heading">
+            <h1>OPENLABEL RESEARCH</h1>
+            <img
+                src="https://www.mlive.com/resizer/1o2FZ1rS-R2oZPwRDQfPemybSCE=/1280x0/smart/advancelocal-adapter-image-uploads.s3.amazonaws.com/image.mlive.com/home/mlive-media/width2048/img/newsnow_impact/photo/umflintlogojpg-99aa56eb215c1995.jpg">
+        </div>
 
-    <div id="navigationBar">
-        <div class="bar">
-            <ul>
-                <li><a href="Openlabel_Page.html">Home</a></li>
-                <li><a href="survey.html">Survey</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
+        <div id="navigationBar">
+            <div class="bar">
+                <ul>
+                    <li><a href="Openlabel_Page.html">Home</a></li>
+                    <li><a href="survey.html">Survey</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 
     <div class="content">
-        <h2>Overview</h2>
         <div class="overview">
+            <h2>Open Label</h2>
             <p>OpenLabel is an open source chrome extension that acts as a Google News Feed and Twitter reader
-                that helps users identify mesia misinformatiob. It will generate a label upon interacting with a given
+                that helps users identify mesia misinformation. It will generate a label upon interacting with a given
                 news
                 article.Before you begin using and/or modifying the extension, there are a few topics to go over.
             </p>
-            <h2>Table Of Contents</h2>
+            <h2>How the extension works</h2>
+            <p>
+                Open Label informs the user over several characteristics from an article. These characteristics are
+                shown below </p>
+            <div class="ul">
+                <ul>
+                    <li>Emotion</li>
+                    <li>Creditability</li>
+                    <li>Publisher</li>
+                    <li>MBFC Media Bias</li>
+                    <li>Viral Terms</li>
+                </ul>
+            </div>
+            <p>
+                Emotion is gathered through reading the articles text and using sentiment analysis.
+                Positive words in the text generate positive values and negative words in the text generate negative
+                values towards the overall emotion score.
+                Creditability, Publisher, and MBFC Media Bias are all sourced from Media Bias/Fact Check. Viral Terms
+                are found using the Google Trends API.
+            </p>
+            <p>The extension analyzes an article when the user hovers the URL for said article (the option also
+                exists
+                to right click the link to activate the analysis).
+                After the user has then hovered over a link our extension will begin to analyze the article. It will
+                indicate to the user that it is loading to communicate the URL is being analyzed.
+                It is then posted in the form of a label next to the cursor and it will appear as below.
+            </p>
+            <img src="https://github.com/kvala1995/kvala1995.github.io/blob/main/Open%20Label.png?raw=true">
+
         </div>
     </div>
 
