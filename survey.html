@@ -2,6 +2,39 @@
 
 <head>
     <link href="navigationbar.css" rel="stylesheet">
+     <style>
+          .surveylink {
+            text-align: center;
+            padding-top: 100px;
+            font-size:xx-large;
+            font-weight: bold;
+            
+          }
+          .surveylink>a{
+            text-decoration: none;
+            transition: background-image 1s;
+            
+        }
+        .surveylink>a:link{
+            background-image: linear-gradient(to right, red, blue , green);
+            background-clip:text;
+            color:transparent;
+            animation: shine infinite;
+        }
+
+        @keyframes shine {
+        0% {
+        transform: translateX(-100%);
+         }
+        50% {
+        transform: translateX(100%);
+        }
+        100% {
+        transform: translateX(100%);
+        }
+}
+
+     </style>
 </head>
 <body>
     <div class="heading">
@@ -19,4 +52,6 @@
             </ul>
         </div>
     </div>
+
+    <div class="surveylink" ><a href = "#">Click here for Survey</a></div>
 </body>
